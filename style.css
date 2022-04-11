@@ -26,6 +26,7 @@ header {
   padding: 0rem 4rem;
   position: sticky;
   top: 0;
+  justify-content: space-between;
 }
 .header__img {
   width: 80px;
@@ -43,13 +44,12 @@ nav {
   background-position: center center;
   text-align: end;
   align-items: center;
-  justify-content: center;
 }
 
 nav ul li {
   display: inline-block;
   padding: 10px;
-  justify-content: center;
+  justify-content: space-between;
 }
 .nav__list {
   text-decoration: none;
@@ -65,9 +65,11 @@ nav ul li {
   position: relative;
   font-style: italic;
   font-size: x-large;
+  justify-content: space-between;
 }
 .nav__link:hover {
   color: aqua;
+  text-decoration: underline;
 }
 
 .tituloPrincipal {
