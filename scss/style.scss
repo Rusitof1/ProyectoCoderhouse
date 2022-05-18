@@ -1,0 +1,347 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(2, 2, 29);
+  margin: 0%;
+  padding: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  grid-template-columns: 12rem 1fr;
+  grid-template-areas:
+    "header nav"
+    "main main"
+    "footer footer";
+}
+
+header {
+  width: 100%;
+  padding: 40px;
+  grid-area: header;
+  padding: 0rem 4rem;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+
+  .logo {
+    width: 80px;
+  }
+}
+nav {
+  grid-area: nav;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../imagenes/ps5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: end;
+  align-items: center;
+
+  li {
+    display: inline-block;
+    padding: 20px;
+    justify-content: space-eve;
+
+    .nav__link {
+      @include button;
+    }
+  }
+}
+#tituloPrincipal {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../imagenes/pscolection.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  h1 {
+    font-size: 4.2em;
+    color: $primary-color;
+    padding-top: 80px;
+  }
+}
+#fifa22 {
+  position: relative;
+  overflow: hidden;
+  border: 15px solid black;
+  display: block;
+  background-image: url("../imagenes/fifa.jpeg");
+  background-size: cover;
+}
+#horizon {
+  position: relative;
+  overflow: hidden;
+  border: 15px solid black;
+  display: block;
+  background-image: url("../imagenes/horizon.png");
+  background-size: cover;
+}
+#Revillage {
+  position: relative;
+  overflow: hidden;
+  border: 15px solid black;
+  display: block;
+  background-image: url("../imagenes/Village.jpg");
+  background-size: cover;
+}
+iframe {
+  width: 100;
+  height: 100;
+}
+footer {
+  color: blanchedalmond;
+  padding: 1rem;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+.footer {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../imagenes/GT7_1.jpg);
+}
+footer a img {
+  margin-left: 40px;
+}
+
+.copy {
+  font-style: italic;
+  font-weight: bolder;
+  margin-left: 20px;
+}
+#wsp {
+  position: fixed;
+  top: 88%;
+  left: 90%;
+}
+h2 {
+  font-size: 2.7em;
+}
+
+h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2.3em;
+  font-weight: lighter;
+  font-style: italic;
+  color: rgb(0, 0, 0);
+  margin: 20px;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-style: oblique;
+  margin-left: 20px;
+}
+
+p {
+  font-size: 1.25em;
+}
+.Productos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: rgb(127, 136, 255);
+}
+.PS4__Productos {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit minmax(300px, 1fr));
+  background-image: url("../imagenes/ps4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: antiquewhite;
+  &:hover {
+    color: red;
+  }
+}
+.PS5__Productos {
+  @extend .PS4__Productos;
+  &:hover {
+    color: yellow;
+  }
+  background-image: url("../imagenes/ps5control_.jpg");
+}
+section {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+article h3 {
+  font-size: 22px;
+  color: blanchedalmond;
+}
+article {
+  display: flex;
+  flex: 0 1 350px;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+article img {
+  order: -1;
+  align-self: center;
+}
+
+article button {
+  background: violet;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.formulario {
+  color: map-get($estilos, color);
+  text-align: map-get($estilos, centro);
+  font-size: map-get($estilos, tFuente);
+}
+
+.sobrenosotros {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../imagenes/ps4control.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  color: rgb(233, 211, 183);
+
+  h1 {
+    font-size: 2.7em;
+    color: rgb(255, 145, 0);
+  }
+  h2 {
+    color: rgb(255, 145, 0);
+  }
+  h3 {
+    color: rgb(255, 145, 0);
+  }
+
+  p {
+    font-size: map-get($estilos, tFuente);
+  }
+
+  ul {
+    text-align: center;
+    font-size: x-large;
+    list-style-position: inside;
+  }
+}
+
+#informacion {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../imagenes/play.webp");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#informacion h1 {
+  display: block;
+  font-size: 2.7em;
+  color: rgb(255, 255, 255);
+}
+
+#informacion h2 {
+  color: rgb(255, 255, 255);
+}
+#informacion h3 {
+  color: chocolate;
+}
+
+#informacion p {
+  color: aliceblue;
+}
+.Preguntas {
+  font-size: x-large;
+}
+
+.formulario {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../imagenes/plus.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: rgb(57, 57, 163);
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+  }
+  .header {
+    position: relative;
+  }
+  nav {
+    background-image: none;
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+  }
+  .nav__list {
+    list-style: none;
+  }
+  .nav__link {
+    font-size: large;
+  }
+  iframe {
+    display: none;
+  }
+  .tituloPrincipal {
+    background-image: none;
+  }
+}

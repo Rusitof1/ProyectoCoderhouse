@@ -1,0 +1,12 @@
+Informe SEO:
+ En el archivo index.html sumé el SEO con las siguientes características:
+Descripción: mediante la etiqueta meta name description, agregué la siguiente linea de párrafo que explica en pocas palabras el contenido del sitio: “esta pagina es sobre venta de video juegos ps4 y ps5"
+Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: "juegos, ps4, ps5, resident, fifa22"
+Encabezado: para el encabezado del h1 utilicé el texto: “Expertos en video juegos
+            Venta de juegos formato digital directamente desde el Store”
+
+RESUMIENDO:
+1 - Colocacion de los h1
+2 - Colocacion de meta keywords
+3 - Colocacion de meta description
+4 - Colocacion de los alt para la inclusión de gente con discapacidad

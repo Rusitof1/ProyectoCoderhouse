@@ -1,0 +1,20 @@
+/* variables */
+$primary-color: rgb(255, 255, 255);
+/* mixin */
+@mixin button {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  position: relative;
+  font-style: italic;
+  font-size: x-large;
+  &:hover {
+    color: aqua;
+    text-decoration: underline;
+  }
+}
+/* maps */
+$estilos: (
+  color: #c1cad8,
+  centro: center,
+  tFuente: 18px,
+);

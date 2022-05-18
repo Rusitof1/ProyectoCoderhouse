@@ -1,0 +1,20 @@
+{
+  "name": "xgames-coderhouse",
+  "version": "1.0.0",
+  "description": "pagina ficticia de venta de video juegos",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rusitof1/ProyectoCoderhouse.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rusitof1/ProyectoCoderhouse/issues"
+  },
+  "homepage": "https://github.com/Rusitof1/ProyectoCoderhouse#readme"
+}
