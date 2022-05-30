@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link
     rel="stylesheet"
     href="animate.min.css"
@@ -50,21 +50,27 @@
           <p>NO DUDES EN CONSULTARNOS</p><br><br>
           <legend>CONTACTO</legend>
           <br />
-          <label for="Nombre">NOMBRE:</label><br />
-          <input type="text" name="Nombre" id="Nombre" />
+          <label for="Nombre">Nombre</label><br />
+          <input type="text" name="Nombre" id="Nombre" placeholder=" Escriibe tu nombre" />
           <br />
-          <label for="Apellido">APELLIDO:</label><br />
-          <input type="text" name="Apellido" id="Apellido" />
+          <label for="Apellido">Apellido</label><br />
+          <input type="text" name="Apellido" id="Apellido" placeholder="Escribe tu apellido"/>
           <br />
-          <div>HOMBRE</div>
+          <label for="email">Email</label><br />
+	        <input type="email" name="email" id="Email" placeholder="Email" required />
+          <br />
+          <label for="asunto">Asunto</label><br />
+	        <input type ="text" name="asunto" id="Asunto" placeholder="Asunto"/>
+          <br />
+          <div>Hombre</div>
           <input type="radio" name="sexo" value="Hombre" />
-          <div>MUJER</div>
+          <div>Mujer</div>
           <input type="radio" name="sexo" value="Mujer" />
           <div>ACEPTA LOS TERMINOS Y CONDICIONES</div>
 
           <input type="checkbox" name="Acepta" value="1" />
           <br><br>
-          <label for="Mensaje">MENSAJE</label>
+          <label for="Mensaje">Mensaje</label>
           <br />
           <textarea name="mensaje" id="mensaje" cols="80" rows="10"></textarea><br>
           <input type="submit" value="ENVIAR" />
